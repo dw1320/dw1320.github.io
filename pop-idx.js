@@ -1,4 +1,4 @@
-const popSlides = ["Daniel is learning new things!", "He has discovered GitHub!", "Woah...", "And Terminal!", "Oohhh...", "Aahhh...", "So, using these tools, he is very excited to share this website with you!", "However, you must know 2 things:", "1) The comments section on the recipes is not public. Your comments will erase after you leave the webpage. (I think.)", "2) The trivia has a bug. Do not exploit it.", "That's all!"]
+const popSlides = ["Daniel is learning new things!", "He has discovered GitHub!", "Woah...", "And Terminal!", "Oohhh...", "Aahhh...", "So, using these tools, he is very excited to share this website with you!", "However, you must know 2 things:", "1) The comments section on the recipes is not public. Your comments will erase after you leave the webpage. (I think.)", "2) The trivia has a bug. Do not exploit it.", "Also, unfortunately, the recipe index page is not active. However, you can still use the arrows on this page to browse through all of my recipes.", "That's all!"]
 let navText = document.querySelector(".pop-nav").textContent
 let mainText = document.querySelector(".pop-content").textContent
 
