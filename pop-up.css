@@ -1,0 +1,107 @@
+.pop-up {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  /*Above code from w3 schools */
+  font-family: Palatino, "URW Palladio L", serif;
+  opacity: 0;
+  animation-name: popUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-direction: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes popUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+
+.pop-close {
+  color: #fff;
+  padding: 6px;
+  border: 2px white solid;
+  margin-left: 25px;
+  transition: 1s;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.pop-close:hover {
+  cursor: pointer;
+  color: #ccc;
+  border: #ddd 2px solid;
+  transition: 1s;
+}
+
+.pop-text {
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  background-color: #355c7d;
+  border: 2px solid black;
+  padding: 25px;
+  color: #311430;
+  font-size: 36px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 2%;
+}
+
+.pop-nav {
+  color: #fff;
+  padding: 6px;
+  border: 2px white solid;
+  margin-left: 25px;
+  transition: 1s;
+  background-color: rgba(0,0,0,0.1);
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  border-radius: 2%;
+}
+
+.pop-nav:hover {
+  cursor: pointer;
+  color: #ccc;
+  border: #ddd 2px solid;
+  transition: 1s;
+}
+
+.pop-back {
+  display: none;
+  color: #fff;
+  padding: 6px;
+  border: 2px white solid;
+  margin-left: 25px;
+  transition: 1s;
+  background-color: rgba(0,0,0,0.1);
+  position: absolute;
+  bottom: 10px;
+  left: -10px;
+  font-size: 14px;
+  font-weight: normal;
+  border-radius: 2%;
+}
+
+.pop-back:hover {
+  cursor: pointer;
+  color: #ccc;
+  border: #ddd 2px solid;
+  transition: 1s;
+}

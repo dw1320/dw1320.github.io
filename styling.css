@@ -1,0 +1,291 @@
+/* help I know how to use the html font face import but what about @font-face in css?? */
+
+
+* {
+  /*border: 2px black dotted;*/
+  Box-sizing: border-box;
+}
+
+#blondies .recipe-name {
+  font-size: 16px; !important
+}
+
+img {
+  height: 120px;
+  width: auto;
+}
+
+.buffer {
+  height: 10px;
+}
+
+.arrow-button, .clickbox {
+  cursor: pointer;
+}
+
+.character-count {
+  display: none;
+}
+
+#left-button {
+  position: relative;
+  width: 20px;
+  height: auto;
+  left: 20px;
+  top: 110px;
+}
+
+#right-button {
+  position: relative;
+  width: 20px;
+  height: auto;
+  top: 110px;
+  left: 390px;
+}
+
+.recipe-full article {
+  width: 400px;
+}
+
+#about {
+  position: fixed;
+  width: 150px;
+  left: 460px;
+  top: 78px;
+  line-height: 14px;
+  font-family: Palatino, "URW Palladio L", serif;
+}
+
+#photoOfMe {
+  width: 150px;
+  height: auto;
+  display: block;
+  overflow: hidden;
+}
+
+#photoOfMe img {
+  width: 150px;
+  height: auto;
+}
+
+.recipe {
+  width: 400px;
+  height: 150px;
+  border: 2px black solid;
+  margin: 30px;
+}
+
+.recipe .recipe-image {
+  margin: 15px;
+  height: 120px;
+  width: 120px;
+  overflow: hidden;
+ position: absolute;
+
+}
+
+.recipe .recipe-image img {
+  width: auto;
+  height: 120px;
+}
+
+.recipe .recipe-name {
+  width: 235px;
+  height: 20px;
+ text-align: center;
+ color: #022244dd;
+ font-weight: bold;
+ text-transform: lowercase;
+ font-size: 24px;
+ position: absolute;
+ margin: 15px 15px 10px 15px;
+ left: 180px;
+ line-height: 12px;
+}
+
+#choc-pumpkin .recipe-name {
+  font-size: 20px;
+}
+
+.recipe .recipe-description {
+  width: 235px;
+  height: 70px;
+  overflow: hidden;
+  line-height: 10px;
+  position: absolute;
+  margin: 55px 15px 10px;
+  left: 180px;
+  font-family: Palatino, "URW Palladio L", serif;
+  font-size: 11px;
+}
+
+.recipe .recipe-more {
+  position: absolute;
+  text-transform: uppercase;
+  width: 235px;
+  height: 5px;
+  margin: 125px 15px 10px;
+  left: 180px;
+}
+
+.recipe .recipe-author, .recipe .recipe-date {
+  font-style: italic;
+  font-size: 10px;
+  font-weight: bold;
+  position: absolute;
+  left: 195px;
+  margin-top: 40px;
+  height: 10px;
+  width: 115px;
+  text-align: center;
+}
+
+.recipe .recipe-author {
+  margin-left: 0px;
+}
+
+.recipe .recipe-date {
+  margin-left: 120px;
+}
+
+H1 {
+color: gray;
+Text-transform: uppercase;
+Font-weight: 900;
+Letter-spacing: 4px;
+Word-spacing: 6px;
+}
+
+Article .recipe img {
+Width: 250px;
+Height: auto;
+}
+
+Body {
+Font-family: monospace;
+/* CodeAcademy told me to put this here? Margin: 0;
+Padding: 0; */
+Box-sizing: border-box;
+Background-color: #F4EBD0;
+}
+
+Nav {
+Background-color: lightblue;
+Text-align: center;
+Position: fixed;
+Top: 5px;
+Width: 100%;
+Border-top: 1px black solid;
+Border-bottom: 1px black solid;
+Padding: 2px;
+}
+
+Table {
+Color: #303437;
+Background-color: black;
+}
+
+Article {
+Font-size: 14px;
+}
+
+Form {
+Font-size: 12px;
+}
+
+A {
+Font-weight: bold;
+}
+
+Form .submit:hover {
+background-Color: black;
+color: white;
+}
+
+A:hover {
+Font-weight: normal;
+Color: blue;
+}
+
+Nav a {
+Background-color: lightblue;
+text-decoration: none;
+}
+
+.click a {
+Color: darkgray;
+Background-color: white;
+font-size: 16px;
+Border: 3px lightgray solid;
+Padding: 3px;
+}
+
+.click a:hover {
+Background-color: black;
+color: white;
+}
+
+Td,th {
+Padding: 5px;
+Background-color: #E4CAF5aa;
+}
+
+#statement div {
+Width: 350px;
+Height: 150px;
+Overflow: scroll;
+Background-color: darkslategray;
+Color: lightsteelblue;
+Border: solid 4px black;
+Padding: 8px;
+font-family: 'Abril Fatface', cursive;
+Line-height: 20px;
+Text-align: justify;
+Font-size: 12px;
+}
+
+#statement div h5 {
+color: #E4CAF5aa;
+font-size: 18px;
+}
+
+.with-nav {
+Padding-top: 14px;
+}
+
+#blocks img {
+Width: 250px;
+Height: auto;
+}
+
+.image-with-overlay {
+Display: inline-block;
+Position: relative;
+}
+
+.image-with-overlay figcaption {
+Position: absolute;
+Bottom: 15px;
+Padding: 6px;
+Width: 150px;
+Background-color: white;
+Color: black;
+Text-align: center;
+Opacity: 0.8;
+}
+
+.image-with-overlay figcaption:hover {
+Opacity: 1;
+}
+
+.nav-top {
+Width: 100%;
+Height: 5px;
+Position: fixed;
+Top: 0px;
+Background-color: #F4EBD0;
+}
+
+#formal {
+text-align: center;
+}

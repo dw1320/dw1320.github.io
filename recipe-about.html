@@ -1,0 +1,167 @@
+<!DOCTYPE = html>
+<html>
+  <head>
+    <title>About Daniel Wagman | DANIEL WAGMAN BAKES</title>
+    <link href="./styling.css" rel="stylesheet" type="text/css">
+    <link href="./trivia-style.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body>
+    <h1>Daniel Wagman Bakes</h1>
+    <h3>Trivia about Daniel!</h3>
+    <div id="trivia-parent">
+      <button id="start-button">Start</button>
+      <div class="question"></div>
+      <div class="choice"></div>
+      <div class="choice"></div>
+      <div class="choice"></div>
+      <div class="score"></div>
+      <button id="next-button">Next</button>
+    </div>
+    <script src="./trivia.js"></script>
+
+<!-- some old script for your enjoyment! -->
+
+<!--
+
+  <script>
+    const choices = Array.from(document.getElementsByClassName('choice'))
+    console.log(choices)
+    let questionContent = document.querySelector('.question').textContent
+    let correctAnswer
+    const questions = []
+    const questionAnswers = []
+    const correctAnswers = []
+    let score = 0
+
+    function backChange (elem) {
+      elem.style.backgroundColor = '#00000011'
+    }
+
+    function addQuestion (question, incorrectOne, incorrectTwo, correct) {
+      const answersArrayLength = questionAnswers.length
+      questions.push(question)
+      questionAnswers.push([])
+      correctAnswers.push(correct)
+        questionAnswers[answersArrayLength].push(incorrectOne)
+        questionAnswers[answersArrayLength].push(incorrectTwo)
+        questionAnswers[answersArrayLength].push(correct)
+    }
+    addQuestion ('What grade is Daniel in?', '9th', '11th', '10th')
+    console.log(questions)
+    console.log(questionAnswers)
+
+    function choiceClicked (selection) {
+      if (selection.textContent === correctAnswer) {
+        score = score + 1;
+        selection.style.backgroundColor = 'green'
+      } else {
+        selection.style.backgroundColor = 'red'
+    }
+    document.querySelector('.score').textContent = `Current score: ${score}`;
+    document.querySelector('#next-button').style.display = 'block';
+    choices.forEach(choice => {
+      choice.disabled = true;
+    })
+
+  }
+
+addQuestion ("Which month is Daniel's birthday month?", 'August', 'January', 'December')
+
+    function newQuestion () {
+      function removeListeners (element) {
+        const oldElem = element;
+        const newElem = oldElem.cloneNode(true);
+        oldElem.parentNode.replaceChild(newElem, oldElem);
+        console.log('Success removing event listeners!')
+      }
+      choices.forEach(choice => {
+
+    //    choice.replaceWith(choice.cloneNode(true));
+        removeListeners(choice);
+//need to remove event listener later on
+      })
+
+      choices.forEach(choice => {
+      //  choice.style.display = 'none';
+
+        choice.disabled = false;
+        choice.style.backgroundColor = '#00000011'
+      })
+
+
+      const questionNum = Math.floor(Math.random() * questions.length)
+      console.log(questionNum)
+      console.log(questions[questionNum])
+      document.querySelector('.question').textContent = questions[questionNum]
+      let numberOfThree = Math.floor(Math.random() * 3)
+      correctAnswer = correctAnswers[questionNum]
+      console.log(numberOfThree)
+      switch (numberOfThree) {
+        case 0:
+        choices[0].textContent = questionAnswers[questionNum][0]
+        choices[1].textContent = questionAnswers[questionNum][1]
+        choices[2].textContent = questionAnswers[questionNum][2]
+        break;
+        case 1:
+        choices[1].textContent = questionAnswers[questionNum][0]
+        choices[2].textContent = questionAnswers[questionNum][1]
+        choices[0].textContent = questionAnswers[questionNum][2]
+        break;
+        case 2:
+        choices[2].textContent = questionAnswers[questionNum][0]
+        choices[0].textContent = questionAnswers[questionNum][1]
+        choices[1].textContent = questionAnswers[questionNum][2]
+        break;
+    //  return correctAnswers[questionNum]
+      }
+        /* choice.addEventListener('click', function () {
+          if (choice.textContent === correctAnswer) {
+            score = score + 1;
+            document.querySelector('.score').textContent = `Current score: ${score}`;
+            choice.style.backgroundColor = 'green'
+            setTimeout(newQuestion, 500)
+          } else {
+            document.querySelector('.score').textContent = `Current score: ${score}`;
+            choice.style.backgroundColor = 'red'
+            setTimeout(newQuestion, 500)
+          }
+        })
+      })  */
+
+      document.querySelector('#next-button').style.display = 'none';
+      choices.forEach(choice => {
+    //    choice.style.display = "inline-block";
+        choice.addEventListener("click", function () {
+          choiceClicked(choice);
+        });
+//need to remove event listener later on
+      })
+}
+
+
+function start () {
+  choices.forEach(choice => {
+    choice.style.display = "inline-block";
+  })
+  document.querySelector('#start-button').style.display = 'none';
+  newQuestion()
+}
+
+function next () {
+  document.querySelector('#next-button').style.display = 'none';
+  newQuestion()
+}
+
+document.querySelector('#start-button').addEventListener('click', start)
+document.querySelector('#next-button').addEventListener('click', next)
+
+
+
+  </script>
+
+-->
+
+</body>
+
+</html>
