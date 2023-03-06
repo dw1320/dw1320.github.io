@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DANIEL WAGMAN BAKES</title>
+        <link href="./styling.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="root"></div>
+    </body>
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+    <script type="text/babel">
+        const recipe = (id, name, img, alt, date, description, link) => {
+            return (
+                <div className="recipe" id={id}>
+                    <div className="recipe-name">{name}</div>
+                    <div className="recipe-image"><img src={img} alt={alt} className="recipe-image-img" /></div>
+                    <div className="recipe-author">By Daniel Wagman</div>
+                    <div className="recipe-date">{date}</div>
+                    <div className="recipe description">{description}</div>
+                    <div className="recipe-more"><a href={link}>Click here for more.</a></div>
+                </div>
+            )
+        }
+
+        const espresso = {
+            id:"espresso",
+            name:"Espresso Cake",
+            img:"./images/espresso.jpg",
+            alt:"Espresso cake with a crackly cinnamon-sugar top",
+            date:"March, 2023",
+            description:"When I go to a coffee shop, I often shock friends with my order: a decaf coffee without sugar or milk. Although unconventional, I enjoy this order because the coffee’s deep flavor shines and I can assure myself of a good night’s sleep to come. Nonetheless, what does one do when they want to experience coffee’s flavor in a sweet form? Clearly, one creates a comforting cinnamon-espresso cake that tastes as though melted coffee ice cream has been reincarnated in cake form and gifted a crackly cinnamon-sugar topping. I insist that you enjoy this cinnamon-espresso cake warm–I am sure that it will take little convincing once the warm, rich aromas of espresso and spice begin to fill your home.",
+            link:"./espresso-cake.html"
+        }
+        const elem = recipe(espresso.id, espresso.name, espresso.img, espresso.alt, espresso.date, espresso.description, espresso.link)
+        ReactDOM.render(elem, document.getElementById('root'))
+    </script>
+</html>
